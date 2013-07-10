@@ -26,7 +26,7 @@ import ddf.minim.analysis.*;
 
 String version = "1.0.1";
 
-public Boolean debugMode = false;
+public boolean debugMode = false;
 
 Stage stage = null;
 
