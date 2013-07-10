@@ -94,11 +94,11 @@ public class Stage extends PApplet {
    *
    */
   private void enableGLBlending() {
-    GL gl = pgl.beginGL(); 
+    GL gl = g.beginPGL().gl;
     gl.glDisable(GL.GL_DEPTH_TEST);
     gl.glEnable(GL.GL_BLEND);
     gl.glBlendFunc(GL.GL_SRC_ALPHA, GL.GL_ONE);
-    pgl.endGL();
+    pgl.endPGL();
   }
 
   public int sketchWidth() {
